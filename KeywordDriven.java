@@ -12,9 +12,9 @@ public class KeywordDriven {
         driver= new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://tutorialsninja.com/demo");
-        driver.findElement(By.linkText("My Ac  count")).click();
+        driver.findElement(By.linkText("My Account")).click();
         driver.findElement(By.linkText("Login")).click();
-       KeywordDriven.enterEmail("seleniumpanda@gmail.com");
+        KeywordDriven.enterEmail("seleniumpanda@gmail.com");
         KeywordDriven.enterPassword("Selenium@123");
         KeywordDriven.clickOnLoginButton();
         KeywordDriven.verifyLoginSuccess();
